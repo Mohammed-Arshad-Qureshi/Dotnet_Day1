@@ -10,7 +10,13 @@ namespace EmployeeWage
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to EmployeeWage Computaion Program");
+            int Is_Present = 1;
+            Random r = new Random();
+            int check = r.Next(0, 2);
+            if (Is_Present == check)
+                Console.WriteLine("Employee Is Present");
+            else
+                Console.WriteLine("Employee Is Absent");
             Console.ReadLine();
         }
     }
