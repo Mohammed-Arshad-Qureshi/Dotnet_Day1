@@ -11,12 +11,17 @@ namespace EmployeeWage
         static void Main(string[] args)
         {
             int Is_Present = 1;
+            int Wage_Per_Hr = 20;
+            int DailyWage = 0;
+            int WorkingHrs = 0;
             Random r = new Random();
-            int check = r.Next(0, 2);
+            int check = r.Next(0,2);
             if (Is_Present == check)
-                Console.WriteLine("Employee Is Present");
+                WorkingHrs = 8;
             else
-                Console.WriteLine("Employee Is Absent");
+                WorkingHrs = 0;
+            DailyWage = WorkingHrs + DailyWage;
+            Console.WriteLine(DailyWage);
             Console.ReadLine();
         }
     }
