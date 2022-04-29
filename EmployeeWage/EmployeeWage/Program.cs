@@ -12,7 +12,7 @@ namespace EmployeeWage
         {
             int Is_Present = 1;
             int Wage_Per_Hr = 20;
-            int DailyWage = 0;
+            int Daily_Wage = 0;
             int WorkingHrs = 0;
             Random r = new Random();
             int check = r.Next(0,2);
@@ -20,8 +20,8 @@ namespace EmployeeWage
                 WorkingHrs = 8;
             else
                 WorkingHrs = 0;
-            DailyWage = WorkingHrs + Wage_Per_Hr;
-            Console.WriteLine(DailyWage);
+            Daily_Wage = WorkingHrs + Wage_Per_Hr;
+            Console.WriteLine(Daily_Wage);
             Console.ReadLine();
         }
     }
