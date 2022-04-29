@@ -20,7 +20,7 @@ namespace EmployeeWage
                 WorkingHrs = 8;
             else
                 WorkingHrs = 0;
-            DailyWage = WorkingHrs + DailyWage;
+            DailyWage = WorkingHrs + Wage_Per_Hr;
             Console.WriteLine(DailyWage);
             Console.ReadLine();
         }
